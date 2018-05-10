@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en">
+    <head>
+        <title>Ema Content Ninja - Award Winning &amp; 5 Star Rated Writer</title>
+        <meta name="description" content=" Award winning &amp; 5 star rated writer available for hire">
+        <meta name="keywords" content="">
+        <meta charset="utf-8">
+        <meta name="author" content="Ema Williams">
+        <!--[if IE]>
+        <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+        <![endif]-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+        <!-- Favicon -->
+        <link rel="shortcut icon" href="{%  static 'img/favicon/favicon.ico' %}">
+        <!-- Fonts -->
+        <link href="{% static 'css/font-roboto.css' %}" rel="stylesheet">
+        <link href="{% static 'css/font-awesome.min.css' %}" media="all" rel="stylesheet">
+        <!-- CSS -->
+        <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+        <link rel="stylesheet" href="{% static 'css/bootstrapValidator.min.css' %}">
+        <link href="{% static 'css/screen.css' %}" rel="stylesheet" media="screen">
+    </head>
+    <body>
+        <div class="main">
+            <!-- HEADER -->
+            <header id="header">
+                <div class="container">
+                    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+                        <a class="navbar-brand" href="#"><img src="{% static 'img/logo.png' %}" alt="emacontentninja-logo" class="img-responsive"></a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav ml-auto mr-5">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#sample">SAMPLES</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">TESTIMONIALS</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">PRICING</a>
+                                </li>
+                            </ul>
+                            <div class="btn-inline">
+                                <button type="button" class="btn btn-success" data-toggle="modal" data-target="#letsTalk"><i class="fa fa-comments">&nbsp;</i>Let’s Talk Project</button>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </header>
+            {% block page_content %} {% endblock %}
+            <!-- Footer -->
+            <footer class="bg-light">
+                <div class="container">
+                    <div class="row copyright">
+                        <div class="col-md-4"><a href="#">Terms</a> | <a href="#">Privacy</a></div>
+                        <div class="col-md-8 text-right">All Rights Reserved. Copyright © 2018 emacontentninja.com</div>
+                    </div>
+                </div>
+            </footer>
+            <!-- /Footer -->
+        </div>
+        <!-- /main -->
+        {% include 'sample_modal.html' %}
+    </body>
+</html>

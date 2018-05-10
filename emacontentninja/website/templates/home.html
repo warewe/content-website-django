@@ -1,0 +1,374 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+{% block page_content %}
+<div class="jumbotron mb-0">
+    <div class="container">
+        <div class="banner bannerLg">
+            <div class="bannerC-left">
+                <h2>Yo.</h2>
+                <p>I’m Ema. I’ve been writing for businesses, webmasters and corporate clients for nearly 5 years.</p>
+                <p>I call myself a copywriter, freelance writer, and ghost writer who develops blog content, ebooks, emails, lead magnets, and website copy.</p>
+            </div>
+            <div class="bannerC-right">
+                <span class="triangle-left"></span>
+                <div class="profileImg">
+                    <img src="{% static 'img/profileImg.jpg' %}" alt="Profile image" class="img-fluid">
+                </div>
+                <div class="profileName text-center">
+                    <h3>Ema Williams</h3>
+                    <div class="star-rating">
+                        <ul class="list-inline">
+                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                            </li>
+                        </ul>
+                    </div>
+                    <p>5 star rated content writer on Fiverr available for hire.</p>
+                    <a href="https://www.fiverr.com/emacontentninja" class="btn btn-success" target="_blank">Contact on Fiverr</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /BANNER -->
+<!-- Writing sample -->
+<section class="bg-primary pt-sm-5 pb-sm-5 pt-xs-5 pb-xs-5 pt-md-3 pb-md-3">
+    <div class="container">
+        <div class="sample">
+            <ul class="list-unstyled mb-0">
+                <li>
+                    <h2 class="mb-0">Writing sample <i class="fa fa-chevron-circle-right">&nbsp;</i></h2>
+                </li>
+                <li>
+                    <a data-toggle="modal" data-target="#myModal1">
+                    <i class="fa fa-search fa-lg">&nbsp;</i>
+                    <span>SEO Writing</span>
+                    </a>
+                </li>
+                <li>
+                    <a data-toggle="modal" data-target="#myModal2">
+                    <i class="fa fa-clipboard fa-lg">&nbsp;</i>
+                    <span>Long Form Blog Posts</span>
+                    </a>
+                </li>
+                <li>
+                    <a data-toggle="modal" data-target="#myModal3">
+                    <i class="fa fa-file-text-o fa-lg">&nbsp;</i>
+                    <span>Website Content</span>
+                    </a>
+                </li>
+                <li>
+                    <a data-toggle="modal" data-target="#myModal4">
+                    <i class="fa fa-file-pdf-o fa-lg">&nbsp;</i>
+                    <span>Case Studies</span>
+                    </a>
+                </li>
+                <li>
+                    <a data-toggle="modal" data-target="#myModal5">
+                    <i class="fa fa-tablet fa-lg">&nbsp;</i>
+                    <span>E-book</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+<!-- /Writing sample -->
+<!-- Hire for: -->
+<section class="pb-md-5 pt-md-5 bg-light hirefor pt-sm-5 pb-sm-5 pt-xs-5 pb-xs-5">
+    <div class="container text-center">
+        <div class="sectionHeader clearfix mb-5">
+            <h2>Hire for my specialities which include:</h2>
+            <p class="tagline">Writing words that matter to people</p>
+        </div>
+        <div class="row mb-5 column-sm">
+            <div class="col-md-3">
+                <i class="fa fa-clipboard"></i>
+                <h5>Blog Posts</h5>
+            </div>
+            <div class="col-md-3">
+                <i class="fa fa-file-pdf-o"></i>
+                <h5>Case Studies</h5>
+            </div>
+            <div class="col-md-3">
+                <i class="fa fa-globe"></i>
+                <h5>Website Copy</h5>
+            </div>
+            <div class="col-md-3">
+                <i class="fa fa-exclamation-circle"></i>
+                <h5>Guides, how-to and actionable content</h5>
+            </div>
+            <div class="col-md-3">
+                <i class="fa fa-tablet"></i>
+                <h5>E-books &amp; Whitepaper</h5>
+            </div>
+            <div class="col-md-3">
+                <i class="fa fa-search"></i>
+                <h5>SEO Writing</h5>
+            </div>
+            <div class="col-md-3">
+                <i class="fa fa-line-chart"></i>
+                <h5>Sales &amp; Marketing Emails</h5>
+            </div>
+            <div class="col-md-3">
+                <i class="fa fa-pie-chart"></i>
+                <h5>Infographics</h5>
+            </div>
+        </div>
+        <p><span class="brH">Or your very important writing projects</span></p>
+    </div>
+</section>
+<!-- /Hire for: -->
+<!-- Testimonials -->
+<section class="pb-md-5 pt-md-5">
+    <div class="container text-center">
+        <div class="sectionHeader clearfix mb-5">
+            <h2>Testimonials</h2>
+            <p class="tagline">When your copy makes people smile, you know you’re doing right.</p>
+        </div>
+        <div class="row">
+            <!-- Carousel -->
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                <!-- Carousel indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                </ol>
+                <!-- Wrapper for carousel items -->
+                <div class="carousel-inner">
+                    <div class="item carousel-item active text-left">
+                        <ul class="list-unstyled chat">
+                            <li class="left clearfix">
+                                <div class="img-box pull-left">
+                                    <span class="missing-image-user">b</span>
+                                </div>
+                                <div class="chat-body clearfix">
+                                    <div class="header">
+                                        <span class="mr-2 avatorName">
+                                        Barrywhite452</span>
+                                        <div class="star-rating">
+                                            <ul class="list-inline">
+                                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <p>Great work as always, thank you !</p>
+                                    <div class="time"><small class="text-muted"><span class="glyphicon glyphicon-time"></span>about 23 hours ago</small>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="right clearfix">
+                                <div class="img-box pull-left">
+                                    <img src="{% static 'img/profileImg.jpg' %}" alt="Profile image">
+                                </div>
+                                <div class="chat-body clearfix">
+                                    <div class="header">
+                                        <span class="mr-2 avatorName">Seller'S Feedback</span>
+                                        <div class="star-rating">
+                                            <ul class="list-inline">
+                                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <p>Thank you so much</p>
+                                    <div class="time"><small class="text-muted"><span class="glyphicon glyphicon-time"></span>about 23 hours ago</small>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="item carousel-item text-left">
+                        <ul class="list-unstyled chat">
+                            <li class="left clearfix">
+                                <div class="img-box pull-left">
+                                    <span class="missing-image-user">D</span>
+                                </div>
+                                <div class="chat-body clearfix">
+                                    <div class="header">
+                                        <span class="mr-2 avatorName">
+                                        Dcsp111</span>
+                                        <div class="star-rating">
+                                            <ul class="list-inline">
+                                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <p>Perfect! Will order again in the near future! :)</p>
+                                    <div class="time"><small class="text-muted"><span class="glyphicon glyphicon-time"></span>10 days ago</small>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="right clearfix">
+                                <div class="img-box pull-left">
+                                    <img src="assets/img/profileImg.jpg" alt="Profile image">
+                                </div>
+                                <div class="chat-body clearfix">
+                                    <div class="header">
+                                        <span class="mr-2 avatorName">Seller's Feedback</span>
+                                        <div class="star-rating">
+                                            <ul class="list-inline">
+                                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <p>Thank you so much! Looking forward to work with you again</p>
+                                    <div class="time"><small class="text-muted"><span class="glyphicon glyphicon-time"></span>10 days ago</small>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="item carousel-item text-left">
+                        <ul class="list-unstyled chat">
+                            <li class="left clearfix">
+                                <div class="img-box pull-left">
+                                    <span class="missing-image-user">L</span>
+                                </div>
+                                <div class="chat-body clearfix">
+                                    <div class="header">
+                                        <span class="mr-2 avatorName">
+                                        Lindybong</span>
+                                        <div class="star-rating">
+                                            <ul class="list-inline">
+                                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <p>I very appreciated the quality of work and her understanding of my goal. Thanks for the encouragment!</p>
+                                    <div class="time"><small class="text-muted"><span class="glyphicon glyphicon-time"></span>10 days ago</small>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="right clearfix">
+                                <div class="img-box pull-left">
+                                    <img src="assets/img/profileImg.jpg" alt="Profile image">
+                                </div>
+                                <div class="chat-body clearfix">
+                                    <div class="header">
+                                        <span class="mr-2 avatorName">Seller's Feedback</span>
+                                        <div class="star-rating">
+                                            <ul class="list-inline">
+                                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <p>Thank you soo much!</p>
+                                    <div class="time"><small class="text-muted"><span class="glyphicon glyphicon-time"></span>10 days ago</small>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Carousel controls -->
+                <a class="carousel-control left carousel-control-prev" href="#myCarousel" data-slide="prev">
+                <i class="fa fa-angle-left"></i>
+                </a>
+                <a class="carousel-control right carousel-control-next" href="#myCarousel" data-slide="next">
+                <i class="fa fa-angle-right"></i>
+                </a>
+            </div>
+            <!-- /Carousel -->
+        </div>
+    </div>
+</section>
+<!-- /Testimonials -->
+<!-- Pricing -->
+<section class="pb-30 pt-30 clearfix bg-dark text-center pt-5 pb-5">
+    <div class="container">
+        <div class="sectionHeader">
+            <h2>Pricing</h2>
+            <p class="tagline">All projects are quoted as a fixed price, including research, writing, editing, and revisions. So, no surprises.</p>
+        </div>
+        <div class="columns">
+            <ul class="price">
+                <li class="header bg-success">Per Word</li>
+                <li class="grey">$0.10 per Word</li>
+                <li>Research</li>
+                <li>Writing</li>
+                <li>Editing</li>
+                <li>Revisions</li>
+                <li>-</li>
+                <li class="grey"><a href="#" class="btn btn-success btn-lg" data-toggle="modal" data-target="#letsTalk">Let's Talk</a></li>
+            </ul>
+        </div>
+        <div class="columns">
+            <ul class="price">
+                <li class="header bg-primary">Retainer</li>
+                <li class="grey">$500 for 6000 words ($0.08/word approx)</li>
+                <li>Research</li>
+                <li>Writing</li>
+                <li>Editing</li>
+                <li>Revision</li>
+                <li>Can be broken down into multiple pieces.</li>
+                <li class="grey"><a href="#" class="btn btn-success btn-lg" data-toggle="modal" data-target="#letsTalk">Let's Talk</a></li>
+            </ul>
+        </div>
+    </div>
+</section>
+<!-- /Pricing -->
+<!-- Let's Talk -->
+<section class="pd-30 pt-30 letsTalk">
+    <div class="container my-5">
+        <div class="sectionHeader text-center">
+            <h2>Let’s Talk About your Project</h2>
+            <p class="tagline">(Usually Replies within 30 mins if not sleeping)</p>
+        </div>
+        <div class="row">
+            <div class="col-md-6 mx-auto">
+                <form class="contactForm" method="post">
+                    <div class="form-group">
+                        <!-- Alerts -->
+                        <div class="alert alert-success" role="alert">
+                            Thank you for message. I will contact you soon.
+                        </div>
+                        <!-- /.Alerts -->
+                        <div id="messages"></div>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="fullName" placeholder="Your name" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" placeholder="Email" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="textarea" class="form-control" name="content" placeholder="Give us some hint"></textarea>
+                    </div>
+                    <div class="form-group text-center">
+                        <button type="submit" class="btn btn-primary btn-lg send">Send</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- /Let's Talk -->
+{% endblock %}
